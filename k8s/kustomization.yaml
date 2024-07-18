@@ -7,4 +7,4 @@ namespace: developer
 images:
   - name: bferraz1990/teste-under
     newName: bferraz1990/teste-under
-    newTag: v0
+    newTag: v1
