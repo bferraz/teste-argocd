@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teste-argocd-under
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: teste-argocd-under
+  template:
+    metadata:
+      labels:
+        app: teste-argocd-under
+    spec:
+      containers:
+        - name: teste-argocd-under
+          image: bferraz1990/teste-under
+          ports:
+            - containerPort: 80

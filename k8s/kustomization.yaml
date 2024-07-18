@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
+namespace: developer
+images:
+- name: bferraz1990/teste-under
+  newName: bferraz1990/teste-under
+  newTag: 951bfebd060b1783b9ea5dc8695459b56e62e7cb
